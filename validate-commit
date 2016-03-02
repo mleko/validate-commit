@@ -2,4 +2,4 @@
 <?php
 require 'vendor/autoload.php';
 $cli = new Mleko\ValidateCommit\Cli();
-exit($cli->run($argv)?0:1);
+$cli->run($argv);

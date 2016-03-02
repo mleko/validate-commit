@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#allow user input if terminal is available
+if [ -t 1 ]; then
+	exec < /dev/tty
+fi
+if [ -f vendor/bin/validate-commit ]; then
+	./vendor/bin/validate-commit validate "$1"
+elif [ -f ./validate-commit ]; then
+	./validate-commit validate "$1"
+fi;
+
+
