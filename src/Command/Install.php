@@ -22,7 +22,7 @@ class Install extends GitHookCommand
         if ("" == array_pop($lines)) {
             $hookContents = implode("\n", $lines);
         }
-        $cmd = realpath(__DIR__ . '/../hook') . " \"\$1\"; ";
+        $cmd = realpath(__DIR__ . '/../../hook') . " \"\$1\"; ";
         file_put_contents($gitHookPath, "$hookContents\n$cmd" . self::INSTALL_MARKER . "\n");
         if (!$exists) {
             chmod($gitHookPath, 0755);
