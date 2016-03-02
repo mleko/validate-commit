@@ -22,6 +22,6 @@ class Uninstall extends GitHookCommand
         $lines = explode("\n", $hookContents);
         unset($lines[$position]);
         file_put_contents($gitHookPath, implode("\n", $lines));
-        echo "Uninstalled\n";
+        echo "Hook uninstalled\n";
     }
 }

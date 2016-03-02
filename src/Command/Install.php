@@ -8,7 +8,7 @@ class Install extends GitHookCommand
     public function execute($args)
     {
         if (false !== $this->isInstalled()) {
-            echo "Already installed\n";
+            echo "Hook already installed\n";
             return;
         }
 
