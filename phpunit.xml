@@ -6,6 +6,7 @@
          verbose="true">
 	<testsuites>
 		<testsuite name="main">
+			<directory suffix="Test.php">test</directory>
 			<directory suffix="Test.php">test/*</directory>
 		</testsuite>
 	</testsuites>

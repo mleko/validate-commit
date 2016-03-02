@@ -21,7 +21,8 @@ class Validate implements Command
 
     private function validateCommitFile($filePath)
     {
-        $message = file_get_contents($filePath);
+        $commentStripper = new \Mleko\ValidateCommit\CommentStripper();
+        $message = $commentStripper->stripComments(file_get_contents($filePath));
 
         $validator = new \Mleko\ValidateCommit\Validator\ChainValidator(
             [
