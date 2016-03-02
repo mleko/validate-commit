@@ -1,0 +1,24 @@
+{
+  "name": "mleko/validate-commit",
+  "description": "A Git hook to validate commit message",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Daniel Król",
+      "email": "daniel@krol.me"
+    }
+  ],
+  "bin": [
+    "validate-commit"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Mleko\\ValidateCommit\\": "src/"
+    }
+  },
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "^5.2"
+  }
+}
