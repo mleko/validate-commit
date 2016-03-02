@@ -17,6 +17,11 @@
       "Mleko\\ValidateCommit\\": "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Mleko\\ValidateCommit\\Test\\": "test/"
+    }
+  },
   "require": {},
   "require-dev": {
     "phpunit/phpunit": "^5.2"

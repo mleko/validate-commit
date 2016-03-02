@@ -1,0 +1,5 @@
+Derezz the master control program
+
+MCP turned out to be evil and had become intent on world domination.
+This commit throws Tron's disc into MCP (causing its deresolution)
+and turns it back into a chess game.

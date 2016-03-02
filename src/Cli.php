@@ -19,7 +19,13 @@ class Cli
     {
         $message = file_get_contents($filePath);
 
-        $validator = new Validator\SubjectLineValidator();
+        $validator = new Validator\ChainValidator(
+            [
+                new Validator\SubjectLineValidator(),
+                new Validator\BodySeparationValidator(),
+                new Validator\TextWidthValidator()
+            ]
+        );
         $errors = $validator->validate($message);
 
         if ($errors) {

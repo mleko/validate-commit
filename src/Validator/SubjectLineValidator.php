@@ -5,10 +5,10 @@ namespace Mleko\ValidateCommit\Validator;
 class SubjectLineValidator implements \Mleko\ValidateCommit\Validator
 {
 
-    const ERROR_TOO_LONG = "Subject line should be no longer than 50 characters, %d present";
-    const ERROR_NOT_CAPITALIZED = "Subject should be capitalized";
-    const ERROR_EMPTY_SUBJECT = "Subject cannot be empty";
-    const ERROR_PERIOD_END = 'Do not end subject with period';
+    const ERROR_TOO_LONG = "Limit the subject line to 50 characters, %d present";
+    const ERROR_NOT_CAPITALIZED = "Capitalize subject line";
+    const ERROR_EMPTY_SUBJECT = "Subject line cannot be empty";
+    const ERROR_PERIOD_END = 'Do not end the subject line with period';
 
     /**
      * @param string $message
