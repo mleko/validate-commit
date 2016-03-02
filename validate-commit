@@ -1,5 +1,5 @@
 #!/usr/bin/env php
 <?php
 require 'vendor/autoload.php';
-$cli = new Mleko\ValidateCommit\CliMain();
+$cli = new Mleko\ValidateCommit\Cli();
 exit($cli->run($argv)?0:1);
